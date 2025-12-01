@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---BODY OPTIONS--- */
+/* National Park: weight 200-800
+font-family: "National Park", sans-serif; */
+/* Truculenta: weight 100-900
+font-family: "Truculenta", sans-serif; */
+
+/* ---HEADINGS OPTIONS--- */
+/* Lemon: weight 400 only
+font-family: "Lemon", serif; */
+/* Yusei Magic: weight 400 only
+font-family: "Yusei Magic", sans-serif; */
+/* Marko One: weight 400 only
+font-family: "Marko One", serif; */
+
+body{
+    font-family: "Yusei Magic", sans-serif; /* Headings font*/
+}
+
+h1{
+    font-size: 52px;
+    /* margin-bottom: 0px; */
+}
+
+h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* h2:last-of-type{
+    margin-bottom: 0;
+} */
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-family: "National Park", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+section{
+    padding: 60px 0;
+    background-color: antiquewhite;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.btn{
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: honeydew;
+    border-radius: 8px;
+    color: midnightblue;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title-area{
+    margin-bottom: 30px;
+    /* border: 1px dashed; */
+}
+
+/* -----BANNER SECTION----- */
+.banner{
+    padding: 90px 0;
+    background-color: lightsalmon;
+    text-align: center;
+}
+
+.banner .container{
+    max-width: 975px;
+}
+
+.banner-flex{
+    display: flex;
+    gap: 30px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.banner-flex-left{
+    width: 50%;
+    /* background-image: url('/img/banner-image.png');
+    background-position: left;
+    background-size: cover; */
+}
+
+.banner-flex-left img{
+    border-radius: 230px;
+    background-color: aliceblue;
+    box-shadow: -5px 5px 12px rgba(105, 105, 105, 25%);
+    padding: 10px;
+}
+
+.banner-flex-right{
+    width: 50%;
+    margin: auto 0;
+}
+
+/* -----ABOUT SECTION----- */
+.about-flex{
+    display: flex;
+    gap: 40px;
+    vertical-align: middle;
+}
+
+.about-flex-left{
+    width: 55%;
+}
+
+.about-flex-right{
+    width: 45%;
+    margin: auto 0;
+}
+
+/* -----PROJECTS SECTION----- */
+.projects{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.projects-card{
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+
+.projects-card{
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+
+.projects-card img{
+    background-color: antiquewhite;
+    box-shadow: -3px 3px 3px rgba(105, 105, 105, 25%);
+}
+
+/* .projects-card:nth-of-type(1){
+    background-image: url('/img/card-lingrow.png');
+}
+
+.projects-card:nth-of-type(2){
+    background-image: url('/img/');
+}
+
+.projects-card:nth-of-type(3){
+    background-image: url('/img/');
+}
+
+.projects-card:nth-of-type(4){
+    background-image: url('/img/');
+}
+
+.projects-card:nth-of-type(5){
+    background-image: url('/img/');
+}
+
+.projects-card:nth-of-type(6){
+    background-image: url('/img/');
+} */
