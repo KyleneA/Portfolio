@@ -114,7 +114,7 @@ img{
     width: 50%;
     height: 400px;
     background-color: aliceblue;
-    background-image: url("/img/banner-image.png");
+    background-image: url(/img/banner-image.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
