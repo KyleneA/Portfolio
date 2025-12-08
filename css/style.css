@@ -24,11 +24,13 @@ body{
 
 h1{
     font-size: 52px;
-    /* margin-bottom: 0px; */
+    text-transform: capitalize;
+    margin-bottom: 15px;
 }
 
 h2{
     font-size: 36px;
+    text-transform: capitalize;
     margin-bottom: 20px;
 }
 
@@ -42,7 +44,7 @@ h3{
 
 p{
     font-family: "National Park", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -53,10 +55,11 @@ section{
 }
 
 img{
-    display: block;
+    display: inline-block;
     max-width: 100%;
     height: auto;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .btn{
@@ -70,45 +73,61 @@ img{
 
 .container{
     max-width: 800px;
+    width: 90%;
     margin: 0 auto;
 }
 
 .title-area{
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
     /* border: 1px dashed; */
 }
 
 /* -----BANNER SECTION----- */
 .banner{
-    padding: 90px 0;
+    padding: 100px 0;
     background-color: lightsalmon;
     text-align: center;
+}
+
+.banner h2{
+    line-height: 1;
 }
 
 .banner .container{
     max-width: 975px;
 }
 
+.banner .title-area{
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
 .banner-flex{
     display: flex;
-    gap: 30px;
+    gap: 60px;
     text-align: right;
     vertical-align: middle;
 }
 
 .banner-flex-left{
+    /* border: 1px solid rgba(5, 5, 10, 45%); */
     width: 50%;
-    /* background-image: url('/img/banner-image.png');
-    background-position: left;
-    background-size: cover; */
+    height: 400px;
+    background-color: aliceblue;
+    background-image: url('/img/banner-image.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 60px;
+    /* box-shadow: -3px 3px 6px rgba(105, 105, 105, 25%); */
 }
 
-.banner-flex-left img{
+/* .banner-flex-left img{
     border-radius: 230px;
     background-color: aliceblue;
     box-shadow: -5px 5px 12px rgba(105, 105, 105, 25%);
     padding: 10px;
-}
+} */
 
 .banner-flex-right{
     width: 50%;
@@ -128,19 +147,18 @@ img{
 
 .about-flex-right{
     width: 45%;
+    height: 300px;
     margin: auto 0;
+    background-image: url('/img/about-image.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* -----PROJECTS SECTION----- */
 .projects{
     background-color: aliceblue;
     text-align: center;
-}
-
-.projects-card{
-    height: 250px;
-    background-position: center;
-    background-size: cover;
 }
 
 .projects-grid{
@@ -152,34 +170,36 @@ img{
 .projects-card{
     height: 250px;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.projects-card img{
+/* .projects-card img{
     background-color: antiquewhite;
     box-shadow: -3px 3px 3px rgba(105, 105, 105, 25%);
-}
+    display: inline-block;
+} */
 
-/* .projects-card:nth-of-type(1){
+.projects-card:nth-of-type(1){
     background-image: url('/img/card-lingrow.png');
 }
 
 .projects-card:nth-of-type(2){
-    background-image: url('/img/');
+    background-image: url('/img/card-bakery.png');
 }
 
 .projects-card:nth-of-type(3){
-    background-image: url('/img/');
+    background-image: url('/img/card-flower.png');
 }
 
 .projects-card:nth-of-type(4){
-    background-image: url('/img/');
+    background-image: url('/img/card-mentorship.png');
 }
 
 .projects-card:nth-of-type(5){
-    background-image: url('/img/');
+    background-image: url('/img/Card-collage.jpg');
 }
 
 .projects-card:nth-of-type(6){
-    background-image: url('/img/');
-} */
+    background-image: url('/img/card-shapes.svg');
+}
