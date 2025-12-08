@@ -114,7 +114,7 @@ img{
     width: 50%;
     height: 400px;
     background-color: aliceblue;
-    background-image: url('../img/banner-image.png');
+    background-image: url("/img/banner-image.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -149,7 +149,7 @@ img{
     width: 45%;
     height: 300px;
     margin: auto 0;
-    background-image: url('../img/about-image.png');
+    background-image: url("/img/about-image.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -181,25 +181,25 @@ img{
 } */
 
 .projects-card:nth-of-type(1){
-    background-image: url('../img/card-lingrow.png');
+    background-image: url("/img/card-lingrow.png");
 }
 
 .projects-card:nth-of-type(2){
-    background-image: url('../img/card-bakery.png');
+    background-image: url("/img/card-bakery.png");
 }
 
 .projects-card:nth-of-type(3){
-    background-image: url('../img/card-flower.png');
+    background-image: url("/img/card-flower.png");
 }
 
 .projects-card:nth-of-type(4){
-    background-image: url('../img/card-mentorship.png');
+    background-image: url("/img/card-mentorship.png");
 }
 
 .projects-card:nth-of-type(5){
-    background-image: url('../img/Card-collage.jpg');
+    background-image: url("/img/Card-collage.jpg");
 }
 
 .projects-card:nth-of-type(6){
-    background-image: url('../img/card-shapes.svg');
+    background-image: url("../img/card-shapes.svg");
 }
