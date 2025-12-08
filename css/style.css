@@ -20,12 +20,14 @@ font-family: "Marko One", serif; */
 
 body{
     font-family: "Yusei Magic", sans-serif; /* Headings font*/
+    color: #161717;
 }
 
 h1{
     font-size: 52px;
     text-transform: capitalize;
     margin-bottom: 15px;
+    color: #25323B;
 }
 
 h2{
