@@ -6,8 +6,11 @@ Working on rebuilding portfolio website
 - [ ] Figure out how to use maybe wordpress to publish
 
 ## Tasks
+- [ ] Create Header 
+- [ ] Create Footer
+
 ### English
-- [ ] Home page
+- [x] Home page
 - [ ] About page
 - [ ] Projects: Main
 - [ ] Projects: linGrow
