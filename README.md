@@ -18,7 +18,7 @@ Working on rebuilding portfolio website
 - [ ] Projects: Flower
 - [ ] Projects: Mentorship
       
-- [ ] Publish?
+- [x] Publish?
 
 ### French
 - [ ] Home page
