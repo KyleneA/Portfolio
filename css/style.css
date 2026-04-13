@@ -19,12 +19,13 @@ font-family: "Yusei Magic", sans-serif; */
 font-family: "Marko One", serif; */
 
 body{
-    font-family: "Yusei Magic", sans-serif; /* Headings font*/
+    font-family: "Sniglet", system-ui;
     color: #161717;
 }
 
 h1{
     font-size: 52px;
+    font-weight: 800;
     text-transform: capitalize;
     margin-bottom: 15px;
     color: #25323B;
