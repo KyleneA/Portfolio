@@ -28,21 +28,68 @@
     <!-- Slick Slider JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" integrity="sha512-An4a3FEMyR5BbO9CRQQqgsBscxjM7uNNmccUSESNVtWn53EWx5B9oO7RVnPvPG6EcYcYPp0Gv3i/QQ4KUzB5WA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+
 <body>
+    <!-- HEADER -->
+    <header class="navigation fixed-top">
+        <nav class="navbar navbar-expand-lg" data-bs-theme="light">
+            <div class="container-fluid mx-lg-3">
+                <!-- Brand link -->
+                <a class="navbar-brand fw-bolder fs-3" href="#">
+                    <img src="https://github.com/KyleneA/Portfolio/blob/main/img/WebLogo2026.png?raw=true" alt="logo">
+                </a>
+
+                <!-- Hamburger Menu Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+
+                <!-- Menu List -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 flex-fill gap-1 gap-lg-3 justify-content-end align-items-lg-center text-center">
+
+                        <!-- Home Button -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"> Home</a>
+                        </li>
+
+                        <!-- About Button -->
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#"> About </a>
+                        </li>
+
+                        <!-- Projects Button -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                                <li><a class="dropdown-item" href="#"> UX Projects </a></li>
+                                <li><a class="dropdown-item" href="#"> Web Design Projects </a></li>
+                                <li><a class="dropdown-item" href="#"> Graphic Projects </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> <!-- End of Menu List -->
+            </div>
+        </nav>
+    </header> <!-- END OF HEADER -->
+
+    <!-- MAIN -->
     <main>
         <section class="banner">
             <div class="container">
-                <div class="title-area">
-                    <h1> Hello! Bonjour! </h1>
-                    <h2> Welcome to my little corner of UX Design and Web Design </h2>
-                </div>
+                <div class="banner-card">
+                    <div class="title-area">
+                        <h1> Hello! Bonjour! </h1>
+                        <h2> Welcome to my little corner of UX Design and Web Design </h2>
+                    </div>
 
-                <div class="banner-flex">
-                    <div class="banner-flex-left"></div>
-                    <div class="banner-flex-right">
-                        <p> I'm Kylene Anne Aguila, a budding designer and UX Researcher from Montreal, Canada. I'm currently learning web design at Vanier College. I'm truly passionate about crafting designs that sincerely address real problems with a user-centric touch. My background in psychology and anthropology is my quiet strength, adding a unique perspective to my work. </p>
-                        <p> While I'm still finding my way in the vast realm of UX Design and Web Design, I bring eagerness and a genuine excitement to learn and grow. </p>
-                        <p> Join me on this journey of continuous improvement and creating designs that make a positive impact. I'm here to soak in every bit of knowledge and experience I possibly can. </p>                    </div>
+                    <div class="text">
+                        <p> I'm Kylene Anne Aguila, a budding designer and UX Researcher from Montreal, Canada. I'm currently learning web design at Vanier College. I'm truly passionate about crafting designs that sincerely address real problems with a user-centric touch. My background in psychology and anthropology is my quiet strength, which gives me a unique approach to creating design solutions. </p>
+                        <p> While I'm still finding my way in the vast realm of UX and Web Design, I am eager and genuinely excited to continue to learn and grow. </p>
+                        <p> Join me on this journey of continuous improvement and creating designs that make a positive impact. I'm here to soak in every bit of knowledge and experience I possibly can. </p>                    
+                    </div>
                 </div>
             </div>
         </section> <!-- Banner Section End -->
@@ -55,7 +102,10 @@
                             <h2> About Me </h2>
                         </div>
 
-                        <p> After falling in love with psychology post-high school, I earned a First-Class Honors Degree in Psychology with Distinction and a minor in anthropology. A pivotal role at the Scleroderma Patient-centered Intervention Network (SPIN) ignited my interest in product development and research application. Pursuing a master's under Dr. MacLeod and Dr. Rezzonico, I discovered a passion for impactful research. Diving into UX design through courses and the linGrow project in Dr. MacLeod's lab, I found the perfect fusion of research and design, sparking my unwavering commitment to a career in UX.  </p>
+                        <p> Through my older sister, I developed a deep curiosity for the human experience. I pursued this curiosity and earned a First-Class Honors Degree in Psychology with Distinction and a minor in anthropology. </p>
+                        <p> My position at the Scleroderma Patient-centered Intervention Network (SPIN) ignited my interest in product development and research application. </p>
+                        <p> Thereafter, I pursued a master's degree under Dr. MacLeod and Dr. Rezzonico. I discovered a passion for impactful research. Diving into UX design through courses and the linGrow project in Dr. MacLeod's lab, I found the perfect fusion of research and design, sparking my unwavering commitment to a career in UX and design. </p>
+                        <p> Acknowledging where my experience and learnings were lacking, I applied to and started the Web Design Specialist ACS program at Vanier College. </p>
                     </div> <!-- End flex left -->
 
                     <div class="about-flex-right"></div> <!-- End flex right -->
@@ -90,6 +140,11 @@
                 </div>
             </div>
         </section> <!-- Projects Section End -->
-    </main>
+    </main> <!-- END OF MAIN -->
+
+    <!-- FOOTER -->
+    <footer>
+
+    </footer> <!-- END OF FOOTER -->
 </body>
 </html>
