@@ -44,6 +44,11 @@ p:last-child {
 section {
   padding: 80px 0;
 }
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+}
 
 .container {
   width: 90%;
@@ -75,6 +80,11 @@ section {
   height: 40px;
 }
 
+footer {
+  padding: 20px;
+  background-color: #f5d3c1;
+}
+
 .banner {
   padding: 190px 0 120px;
   background-image: url(https://github.com/KyleneA/Portfolio/blob/main/img/banner-hero.png?raw=true);
@@ -103,22 +113,27 @@ section {
   text-align: center;
 }
 .banner .banner-card .text {
-  text-align: end;
   font-size: 18px;
 }
 @media (max-width: 992px) {
-  .banner .banner {
+  .banner {
     padding: 100px 0;
   }
 }
 @media (max-width: 768px) {
-  .banner .banner {
+  .banner {
     padding: 80px 0;
+  }
+  .banner .banner-card {
+    padding: 30px;
   }
 }
 @media (max-width: 576px) {
-  .banner .banner {
+  .banner {
     padding: 60px 0;
+  }
+  .banner .banner-card {
+    padding: 20px;
   }
 }
 
@@ -213,4 +228,16 @@ section {
 }
 .projects .projects-grid .projects-card:nth-of-type(6) {
   background-image: url(https://raw.githubusercontent.com/KyleneA/Portfolio/a9ce4c90348c70c91ee0ea20d77adce3c8034b0b/img/card-shapes.svg);
+}
+@media (max-width: 768px) {
+  .projects .projects-grid {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .projects .projects-grid {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
