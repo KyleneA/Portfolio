@@ -15,6 +15,8 @@ h1 {
   font-weight: 800;
   font-size: 54px;
   color: #1b2228;
+  line-height: 0.9;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -91,7 +93,7 @@ section {
           align-items: center;
 }
 .banner .banner-card {
-  padding: 30px;
+  padding: 50px;
   background-color: rgba(240, 146, 96, 0.9);
   border-radius: 8px;
   -webkit-box-shadow: -4px 4px 24px 0 rgba(27, 34, 40, 0.25);
@@ -106,17 +108,17 @@ section {
 }
 @media (max-width: 992px) {
   .banner .banner {
-    padding: 170px 0 100px;
+    padding: 100px 0;
   }
 }
 @media (max-width: 768px) {
   .banner .banner {
-    padding: 150px 0 80px;
+    padding: 80px 0;
   }
 }
 @media (max-width: 576px) {
   .banner .banner {
-    padding: 120px 0 60px;
+    padding: 60px 0;
   }
 }
 
