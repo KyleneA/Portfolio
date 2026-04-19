@@ -74,8 +74,7 @@ section {
 }
 
 .banner {
-  height: 100vh;
-  padding: 100px 0;
+  padding: 190px 0 120px;
   background-image: url(https://github.com/KyleneA/Portfolio/blob/main/img/banner-hero.png?raw=true);
   background-position: center;
   background-size: cover;
@@ -104,6 +103,21 @@ section {
 .banner .banner-card .text {
   text-align: end;
   font-size: 18px;
+}
+@media (max-width: 992px) {
+  .banner .banner {
+    padding: 170px 0 100px;
+  }
+}
+@media (max-width: 768px) {
+  .banner .banner {
+    padding: 150px 0 80px;
+  }
+}
+@media (max-width: 576px) {
+  .banner .banner {
+    padding: 120px 0 60px;
+  }
 }
 
 .about .about-flex {
@@ -156,4 +170,45 @@ section {
   .about .about-flex-left {
     width: 100%;
   }
+}
+
+.projects {
+  text-align: center;
+}
+.projects .projects-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+}
+.projects .projects-grid .projects-card {
+  height: 250px;
+  padding: 15px 0px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #C2DCED;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 4px rgba(69, 70, 71, 0.25);
+          box-shadow: 0 0 4px rgba(69, 70, 71, 0.25);
+}
+.projects .projects-grid .projects-card:nth-of-type(1) {
+  background-image: url(https://github.com/KyleneA/Portfolio/blob/main/img/card-lingrow.png?raw=true);
+}
+.projects .projects-grid .projects-card:nth-of-type(2) {
+  background-image: url(https://github.com/KyleneA/Portfolio/blob/main/img/card-bakery.png?raw=true);
+}
+.projects .projects-grid .projects-card:nth-of-type(3) {
+  background-image: url(https://github.com/KyleneA/Portfolio/blob/main/img/card-flower.png?raw=true);
+}
+.projects .projects-grid .projects-card:nth-of-type(4) {
+  background-image: url(https://github.com/KyleneA/Portfolio/blob/main/img/card-mentorship.png?raw=true);
+}
+.projects .projects-grid .projects-card:nth-of-type(5) {
+  background-image: url(https://github.com/KyleneA/Portfolio/blob/main/img/Card-collage.jpg?raw=true);
+}
+.projects .projects-grid .projects-card:nth-of-type(6) {
+  background-image: url(https://raw.githubusercontent.com/KyleneA/Portfolio/a9ce4c90348c70c91ee0ea20d77adce3c8034b0b/img/card-shapes.svg);
 }
