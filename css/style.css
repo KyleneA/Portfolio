@@ -22,7 +22,6 @@ h1 {
 h2 {
   font-size: 36px;
   text-transform: capitalize;
-  margin-bottom: 20px;
   color: #1b2228;
 }
 
@@ -54,6 +53,15 @@ section {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
+}
+
+.title-area {
+  text-align: center;
+  margin-bottom: 40px;
+  border-radius: 12px 12px 0 0;
+  padding: 12px 24px;
+  -webkit-box-shadow: -4px 4px 24px 0 rgba(27, 34, 40, 0.25);
+          box-shadow: -4px 4px 24px 0 rgba(27, 34, 40, 0.25);
 }
 
 .btn {
@@ -102,15 +110,16 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
+.banner .title-area {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 .banner .banner-card {
   padding: 50px;
   background-color: rgba(240, 146, 96, 0.9);
   border-radius: 8px;
   -webkit-box-shadow: -4px 4px 24px 0 rgba(27, 34, 40, 0.25);
           box-shadow: -4px 4px 24px 0 rgba(27, 34, 40, 0.25);
-}
-.banner .banner-card .title-area {
-  text-align: center;
 }
 .banner .banner-card .text {
   font-size: 18px;
@@ -137,6 +146,9 @@ footer {
   }
 }
 
+.about .title-area {
+  background-color: #8dccbd;
+}
 .about .about-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,9 +162,7 @@ footer {
   width: 60%;
   padding: 25px 25px 30px;
   border-radius: 8px;
-  -webkit-box-shadow: -4px 4px 24px 0 rgba(27, 34, 40, 0.25);
-          box-shadow: -4px 4px 24px 0 rgba(27, 34, 40, 0.25);
-  background-color: #8dccbd;
+  background-color: #edf7f5;
 }
 .about .about-flex-right {
   width: 40%;
@@ -191,6 +201,9 @@ footer {
 
 .projects {
   text-align: center;
+}
+.projects .title-area {
+  background-color: #94C9ED;
 }
 .projects .projects-grid {
   display: -ms-grid;
