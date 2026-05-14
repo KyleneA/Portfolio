@@ -1,0 +1,311 @@
+// STYLES Colors
+$primary: #f09260;
+$primary-90: rgba(240, 146, 96, 0.9);
+$primary-subtle: #f5d3c1;
+$primary-light: #fdefe7;
+
+$secondary: #94C9ED;
+$secondary-subtle: #c1ddf0;
+$secondary-light: #edf7f5;
+
+$tertiary: #8dccbd;
+$tertiary-subtle: #edf7f5;
+$tertiary-light: #d5ece7;
+$tertiary-overlay: rgba(213, 236, 231, 0.4);
+
+$text: #161717;
+$text-heading: #1b2228;
+
+$bg: #fff9f5;
+$bg-alt: #f5fbff;
+
+// STYLES Font Sizes
+$fs1: 54px;
+$fs2: 36px;
+$fs3: 24px;
+$fsp: 16px;
+
+// STYLES Font Margins
+$fmb1: 50px;
+$fmb2: 20px;
+$fmb3: 15px;
+
+// STYLES Rounding
+$rounding1: 8px;
+$rounding-circle: 50%;
+$rounding-title: 12px 12px 0 0;
+
+// STYLES Padding
+$padding-title: 12px 24px;
+
+// STYLES Box-Shadows
+$drop-shadow: -4px 4px 24px 0 rgba(27, 34, 40, 0.25);
+$card-shadow: 0 0 4px 0 rgba(69, 70, 71, 25%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Sniglet", system-ui; /* Headings font*/
+    color: $text;
+    background-color: $bg;
+}
+
+// FONTS
+h1{
+    font-weight: 800;
+    font-size: $fs1;
+    color: $text-heading;
+    line-height: 0.9;
+    margin-bottom: $fmb2;
+}
+
+h2{
+    font-size: $fs2;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    color: $text-heading;
+}
+
+h3{
+    font-size: $fs3;
+}
+
+p{
+    font-family: "National Park", sans-serif;
+    font-size: $fsp;
+    font-weight: 500;
+    margin-bottom: $fmb3;
+}
+
+p:last-child{
+    margin-bottom: 0;
+}
+
+// COMPONENTS Section
+section{
+    padding: 80px 0;
+
+    @media (max-width: 768px) {
+        padding: 60px 0;
+    }
+}
+
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.title-area{
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: $rounding-title;
+    padding: $padding-title;
+    box-shadow: $drop-shadow;
+}
+
+// COMPONENTS Btn
+.btn{
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    color: $text;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #dadce1;
+    text-decoration: underline;
+    box-shadow: 0 0 2px rgba(69, 70, 71, 25%);
+}
+
+// Navbar
+.navbar{
+    background-color: $primary-subtle;
+    color: $text-heading;
+
+    img{
+        height: 40px;
+    }
+}
+
+// Footer
+footer{
+    padding: 20px;
+    background-color: $primary-subtle;
+}
+
+
+// PAGE Banner
+.banner{
+    padding: 190px 0 120px;
+    background-image: url(https://github.com/KyleneA/Portfolio/blob/main/img/banner-hero.png?raw=true);
+    background-position: center;
+    background-size: cover;
+    background-color: $tertiary-overlay;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .title-area{
+        box-shadow: none;
+    }
+    
+    .banner-card{
+        padding: 50px;
+        background-color: $primary-90;
+        border-radius: $rounding1;
+        box-shadow: $drop-shadow;
+
+        .text{
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        padding: 100px 0;
+    }
+
+    @media (max-width: 768px) {
+        padding: 80px 0;
+
+        .banner-card{
+            padding: 30px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        padding: 60px 0;
+
+        .banner-card{
+            padding: 20px;
+        }
+    }
+}
+
+// PAGE About
+.about{
+    .title-area{
+        background-color: $tertiary;
+    }
+
+    .about-flex{
+        display: flex;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .about-flex-left{
+        width: 60%;
+        padding: 25px 25px 30px;
+        border-radius: $rounding1;
+        background-color: $tertiary-subtle;
+        // box-shadow: $card-shadow;    
+        border: 1px solid $tertiary;    
+    }
+
+    .about-flex-right{
+        width: 40%;
+        height: 350px;
+        background-image: url(https://github.com/KyleneA/Portfolio/blob/main/img/about-image.png?raw=true);
+        background-position: center;
+        background-size: cover;
+    }
+
+    @media (max-width: 992px) {
+        .about-flex{
+            gap: 40px;
+        }
+
+        .about-flex-left{
+            width: 70%;
+        }
+
+        .about-flex-right{
+            width: 30%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .about-flex{
+            flex-direction: column-reverse;
+        }
+
+        .about-flex-right{
+            width: 100%;
+            height: 250px;
+            background-position: 50% 25%;
+        }
+
+        .about-flex-left{
+            width: 100%;
+        }
+    }
+}
+
+.projects{
+    text-align: center;
+
+    .title-area{
+        background-color: $secondary;
+    }
+
+    .projects-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+
+        .projects-card{
+            height: 250px;
+            padding: 15px 0px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: #C2DCED;
+            border-radius: 4px;
+            // box-shadow: $card-shadow;
+            border: 1px solid $secondary;
+        }
+
+        .projects-card:nth-of-type(1){
+            background-image: url(https://github.com/KyleneA/Portfolio/blob/main/img/card-lingrow.png?raw=true);
+        }
+        
+        .projects-card:nth-of-type(2){
+            background-image: url(https://github.com/KyleneA/Portfolio/blob/main/img/card-bakery.png?raw=true);
+        }
+        
+        .projects-card:nth-of-type(3){
+            background-image: url(https://github.com/KyleneA/Portfolio/blob/main/img/card-flower.png?raw=true);
+        }
+        
+        .projects-card:nth-of-type(4){
+            background-image: url(https://github.com/KyleneA/Portfolio/blob/main/img/card-mentorship.png?raw=true);
+        }
+        
+        .projects-card:nth-of-type(5){
+            background-image: url(https://github.com/KyleneA/Portfolio/blob/main/img/Card-collage.jpg?raw=true);
+        }
+        
+        .projects-card:nth-of-type(6){
+            background-image: url(https://raw.githubusercontent.com/KyleneA/Portfolio/a9ce4c90348c70c91ee0ea20d77adce3c8034b0b/img/card-shapes.svg);
+        }
+
+    
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    
+        @media (max-width: 576px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
